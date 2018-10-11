@@ -9,35 +9,40 @@
 </head>
 
 <body>
-  <div id="Nav">Nav</div>
-  <div id="ProductInfo">ProductInfo</div>
-  <div id="Checkout"></div>
-  <div id="relateditems"></div>
-  <div id="Reviews"></div>
+  <div id="NavBar"><img height="180px" width="100%" src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/images/navbar2.png"></div>
+    <div id="TopDisplay">
+      <div id="ProductInfo"> This is the product Info</div>
+      <div id="Checkout"> This is the checkout panel</div>
+    </div>
+    <div id="FrequentlyBought"><img height="200px" src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/images/frequentlyBought.png"/></div>
+    <div id="relatedItems"> This is the related products</div>
+    <div id="Reviews"> This is the Reviews</div>
+    <div id="Footer"><img height="180px" width="100%" src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/images/footer.png"></div>
   <script src="/lib/react.development.js"></script>
   <script src="/lib/react-dom.development.js"></script>
-  <script src="https://s3-us-west-1.amazonaws.com/avh-fec-component/bundle.js"></script>
+  <script src="https://s3-us-west-1.amazonaws.com/amazonproductinfo/bundle.js"></script>
+  <script src="https://s3-us-west-1.amazonaws.com/sdc-optimizon/bundle.js"></script>
   <script src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/bundle/bundle.js"></script>
-  <script src="https://s3.amazonaws.com/fec-proxy/bundle.js"></script>
+  <script src="https://s3-us-west-1.amazonaws.com/similarproductsbucket/bundle.js"></script>
 
-  <script>
+ <!--  <script>
     ReactDOM.render(
       React.createElement(Checkout),
       document.getElementById('Checkout')
     );
-  </script>
+  </script> -->
   <script>
     ReactDOM.render(
       React.createElement(relatedItems),
-      document.getElementById('relateditems')
+      document.getElementById('relatedItems')
     );
   </script>
-  <script>
+  <!-- <script>
     ReactDOM.render(
       React.createElement(Reviews),
       document.getElementById('Reviews')
     );
-  </script>
+  </script> -->
 </body>
 
 </html>
