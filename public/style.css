@@ -1,13 +1,31 @@
-#Info {
-  display: block;
+#ProductInfo {
+  flex: 1;
+  padding-left: 9vmin;
 }
 
-#CountDown {
-  margin-left: 5px;
-  display: inline-block;
+#Checkout {
+  flex: 1;
+  padding-right: 9vmin;
 }
 
-#Related {
-  margin: 10%;
-  display: block;
+#Reviews {
+  padding-left: 3vmin;
+}
+
+.productContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav {
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 3vmin;
+}
+
+body {
+  padding: 1vmin;
 }

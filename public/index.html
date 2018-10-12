@@ -4,45 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/style.css">
-  <title>FEC Proxy</title>
+  <title>Optimizon</title>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
-  <div id="NavBar"><img height="180px" width="100%" src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/images/navbar2.png"></div>
-    <div id="TopDisplay">
-      <div id="ProductInfo"> This is the product Info</div>
-      <div id="Checkout"> This is the checkout panel</div>
-    </div>
-    <div id="FrequentlyBought"><img height="200px" src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/images/frequentlyBought.png"/></div>
-    <div id="relatedItems"> This is the related products</div>
-    <div id="Reviews"> This is the Reviews</div>
-    <div id="Footer"><img height="180px" width="100%" src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/images/footer.png"></div>
+  <img class="nav" src='./img/nav.png'>
+  <div class='productContainer'>
+    <div id="ProductInfo">ProductInfo</div>
+    <div id="Checkout"></div>
+  </div>
+  <div id="relateditems"></div>
+  <div id="Reviews"></div>
+
   <script src="/lib/react.development.js"></script>
   <script src="/lib/react-dom.development.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+
   <script src="https://s3-us-west-1.amazonaws.com/amazonproductinfo/bundle.js"></script>
   <script src="https://s3-us-west-1.amazonaws.com/sdc-optimizon/bundle.js"></script>
-  <script src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/bundle/bundle.js"></script>
+  <script src="https://s3-us-west-1.amazonaws.com/optimizon-sdc/bundle.js"></script>
   <script src="https://s3-us-west-1.amazonaws.com/similarproductsbucket/bundle.js"></script>
 
- <!--  <script>
-    ReactDOM.render(
-      React.createElement(Checkout),
-      document.getElementById('Checkout')
-    );
-  </script> -->
   <script>
     ReactDOM.render(
       React.createElement(relatedItems),
       document.getElementById('relatedItems')
     );
   </script>
-  <!-- <script>
-    ReactDOM.render(
-      React.createElement(Reviews),
-      document.getElementById('Reviews')
-    );
-  </script> -->
 </body>
 
 </html>
