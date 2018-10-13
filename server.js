@@ -1,14 +1,14 @@
 require('dotenv').config();
 require('newrelic');
 const express = require('express');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 8080;
 const fetch = require('node-fetch');
 
 
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/api/reviews/:productId', (req, res) => {
