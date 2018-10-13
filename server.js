@@ -12,13 +12,13 @@ const fetch = require('node-fetch');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/api/reviews/:productId', (req, res) => {
-  fetch(`http://ec2-18-144-29-61.us-west-1.compute.amazonaws.com/api/reviews/${req.params.productId}`)
+  fetch(`http://ec2-54-215-187-242.us-west-1.compute.amazonaws.com/api/reviews/${req.params.productId}`)
     .then((res) => res.json())
     .then(json => res.send(json));
 });
 
 app.post('/api/reviews/:productId', (req, res) => {
-  fetch(`http://ec2-18-144-29-61.us-west-1.compute.amazonaws.com/api/reviews/new`, {
+  fetch(`http://ec2-54-215-187-242.us-west-1.compute.amazonaws.com/api/reviews/new`, {
   	method: 'POST'
   })
     .then((res) => {
